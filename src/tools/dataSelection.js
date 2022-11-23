@@ -1,3 +1,5 @@
+import Batman from "../assets/img/PicturesGood-Batman.png";
+
 const dataSelection = [
   {
     name: "",
@@ -8,7 +10,7 @@ const dataSelection = [
   {
     name: "Batman",
     id: 70,
-    img: "./src/assets/img/PicturesGood-Batman.png",
+    img: { Batman },
     isHidden: false,
   },
   {
