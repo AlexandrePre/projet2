@@ -1,6 +1,7 @@
 import React from "react";
 import "./ButtonRulesgenerique.css";
 import { motion } from "framer-motion";
+import ButtonRules from "../assets/img/RulesButton.png";
 
 const ButtonRulesgenerique = () => {
   return (
@@ -24,7 +25,7 @@ const ButtonRulesgenerique = () => {
           onClick=""
           id="SelectHeroesReadyBt"
           className="zoomSelectHeroesReadyBt"
-          src="./src/assets/img/RulesButton.png"
+          src={ButtonRules}
           alt="IntroCard"
           onKeyDown=""
           role="presentation"
