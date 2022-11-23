@@ -1,0 +1,261 @@
+.home {
+  height: 100vh;
+  font-size: fixed;
+}
+
+/*---------background--------*/
+.videoFeu {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  animation-name: slideCote;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideCote {
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  to {
+    transform: translate(500px, 0px);
+  }
+}
+
+/*---------Menu---------*/
+
+.carte1 {
+  position: absolute;
+  left: 47%;
+  top: 60%;
+  z-index: 1;
+  height: 20vh;
+  animation-name: push;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+@keyframes push {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.carte2 {
+  z-index: 2;
+  width: 13vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+.carte3 {
+  z-index: 2;
+  display: none;
+  width: 13vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+.btn-game {
+  position: absolute;
+  left: 47.2vw;
+  top: 70vh;
+  width: 6vw;
+  height: 18vh;
+  background-color: transparent;
+  border: 0;
+}
+
+.carte4 {
+  z-index: 2;
+  display: none;
+  width: 13vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+.btn1 {
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-codex {
+  position: absolute;
+  left: 56vw;
+  top: 70vh;
+  width: 6vw;
+  height: 18vh;
+  background-color: transparent;
+  border: 0;
+}
+.btn-start {
+  position: absolute;
+  width: 12vw;
+  height: auto;
+  top: 70vh;
+  left: 38vw;
+  border: 0;
+  background-color: transparent;
+}
+
+.logo {
+  position: absolute;
+  left: 40vw;
+  top: 27vh;
+  z-index: 2;
+
+  width: 20vw;
+  animation: up 1.5s;
+}
+
+@keyframes up {
+  from {
+    transform: scale(2, 2);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+/*----------Eclair----------*/
+
+.lightning {
+  height: 100vh;
+}
+.lightning1 {
+  position: absolute;
+  left: 17vw;
+  top: 0;
+
+  z-index: 1;
+}
+
+.lightning2 {
+  position: absolute;
+
+  left: 37vw;
+  z-index: 1;
+  top: 0;
+}
+
+.lightning3 {
+  position: absolute;
+
+  left: 58vw;
+  z-index: 1;
+  top: 0;
+}
+
+.lightning4 {
+  position: absolute;
+
+  left: 78vw;
+  z-index: 1;
+  top: 0;
+}
+
+/*--------Colonne---------*/
+
+.home {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ColumnSlideDown {
+  animation-name: slideDown;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.Column {
+  display: flex;
+  justify-content: space-around;
+}
+.ColumnSlideHigh {
+  animation-name: slideHigh;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.columnMenu {
+  width: 20vw;
+  height: 100vh;
+}
+
+#ImgHero {
+  height: 50vh;
+  width: 20vw;
+  vertical-align: bottom;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-25vh);
+  }
+
+  50% {
+    transform: translateY(-50vh);
+  }
+
+  75% {
+    transform: translateY(-75vh);
+  }
+
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
+@keyframes slideHigh {
+  0% {
+    transform: translateY(-100vh);
+  }
+
+  25% {
+    transform: translateY(-75vh);
+  }
+
+  50% {
+    transform: translateY(-50vh);
+  }
+
+  75% {
+    transform: translateY(-25vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

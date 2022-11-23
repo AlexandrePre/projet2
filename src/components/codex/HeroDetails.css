@@ -1,0 +1,15 @@
+.heroDescriptionCodex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroDescriptionCodex h1 {
+  margin: 4vh 0 4vh 0;
+  padding: 0;
+}
+
+.heroImage {
+  width: 25vw;
+  height: auto;
+}

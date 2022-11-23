@@ -1,0 +1,172 @@
+@font-face {
+  font-family: marvel-2;
+  src: url(./assets/fonts/marvel-2.otf);
+}
+* {
+  font-family: marvel-2, "Roboto", "sans-serif";
+}
+a:link {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-image: url("../src/assets/img/fond-building.jpeg");
+  background-attachment: fixed;
+}
+
+.card-container {
+  margin: 0.5rem;
+  background-size: 100% 100%;
+  border-radius: 1.5rem;
+}
+
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+
+  background-size: 100% 100%;
+}
+
+.good {
+  background-image: url("../src/assets/img/CardGood.png");
+}
+
+.neutral {
+  background-image: url("../src/assets/img/CardGood.png");
+}
+
+.bad {
+  background-image: url("../src/assets/img/CardBad.png");
+}
+
+.detail-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  letter-spacing: 0.1em;
+  margin: 3% 1% 0% 1%;
+  padding-top: 10vh;
+}
+
+h3 {
+  font-size: 1.5em;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.7rem;
+  margin-top: 1.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  color: black;
+}
+
+.vide {
+  width: 300px;
+  height: 220px;
+  padding: 0px 10px 0px 10px;
+}
+
+.stats {
+  display: flex;
+  width: 80%;
+  height: 50%;
+  margin-bottom: 15%;
+}
+
+.firstStats {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8em;
+  width: 50%;
+  margin-left: 10%;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+.secondStats {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8em;
+  width: 50%;
+  margin-left: 12%;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+h4 {
+  margin: 5%;
+  text-align: left;
+
+  color: black;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vw;
+}
+.inputBox {
+  position: relative;
+  width: 50vw;
+}
+.inputBox input {
+  width: 100%;
+  padding: 3% 2% 2% 2%;
+  border: 1px solid #ebecea;
+  background: #929aa4;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-size: 1.3em;
+  transition: 2s;
+}
+.inputBox span {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+  pointer-events: none;
+  font-size: 1.4em;
+  color: white;
+  text-transform: uppercase;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  transform: translateX(20%) translateY(-140%);
+  font-size: 0.8em;
+  padding: 0.5%;
+  background: #929aa4;
+  border: 1px solid white;
+  letter-spacing: 0.2em;
+}
+.inputBox input:valid,
+.inputBox input:focus {
+  border: solid 1px black;
+}

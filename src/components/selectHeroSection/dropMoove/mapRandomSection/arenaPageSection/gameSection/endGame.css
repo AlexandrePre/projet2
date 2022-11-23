@@ -1,0 +1,78 @@
+.endGame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4vh;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-image: url("../src/assets/img/fond-building.jpeg");
+  background-attachment: fixed;
+}
+.finalTextLoose {
+  margin: 0;
+  position: absolute;
+  top: 5vh;
+  left: 32vw;
+  width: 60vw;
+  height: auto;
+  font-size: 10rem;
+  color: #fdffdd;
+}
+.finalTextWin {
+  margin: 0;
+  position: absolute;
+  top: 5vh;
+  left: 35vw;
+  width: 60vw;
+  height: auto;
+  font-size: 10rem;
+  color: #fdffdd;
+}
+
+.finalTextDraw {
+  margin: 0;
+  position: absolute;
+  top: 5vh;
+  left: 28vw;
+  width: 60vw;
+  height: auto;
+  font-size: 10rem;
+  color: #fdffdd;
+}
+
+.venomWin {
+  position: absolute;
+  width: 25vw;
+}
+.venomLoose {
+  position: absolute;
+  width: 25vw;
+  left: 33vw;
+}
+.venomDraw {
+  position: absolute;
+  width: 25vw;
+}
+
+.mainMenuFinal {
+  font-size: 2rem;
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  left: 36vw;
+  top: 77vh;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+.playAgainFinal {
+  font-size: 2rem;
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  left: 55vw;
+  top: 77vh;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}

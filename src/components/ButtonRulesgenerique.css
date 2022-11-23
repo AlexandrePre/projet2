@@ -1,0 +1,44 @@
+.playRules {
+  font-size: 2rem;
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  left: 5vw;
+  top: 18vh;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+.leaveRules {
+  font-size: 2rem;
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  left: 5vw;
+  top: 5vh;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+.rulescontainer {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-image: url("../src/assets/img/fond-building.jpeg");
+  background-attachment: fixed;
+}
+
+.buttongen button {
+  position: absolute;
+  top: 5vh;
+  left: 5vh;
+  z-index: 10;
+}
+
+.buttongenhome {
+  display: flex;
+}
+
+.buttongenhome button {
+  position: absolute;
+  top: 5vh;
+  right: 5vh;
+}

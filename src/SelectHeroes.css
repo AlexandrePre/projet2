@@ -1,0 +1,584 @@
+/*---------GLOBAL PAGE---------*/
+#arenaPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/*---------BACKGROUND VIDEO---------*/
+
+#bgVideo {
+  object-fit: cover;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/img/ArenaBG.png");
+  background-size: 100vw;
+  background-position: 0vh, -10vw;
+}
+
+/*---------DROP ZONE---------*/
+
+#arenaDrop {
+  font-family: "bentonsans_extracomp_blackRg";
+  position: absolute;
+  width: 26.25vw;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 36vh;
+  left: 41.3vw;
+}
+
+#arenaDropBG {
+  width: auto;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+}
+
+#arenaDropBG img {
+  width: auto;
+  height: 100%;
+}
+
+#arenaDrop p {
+  font-size: 6vh;
+  height: auto;
+  color: white;
+  text-shadow: 0.5vh 0.5vh 2vh black;
+  line-height: 90%;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  animation: lumiere 5s infinite linear;
+  text-shadow: 0 0 7px rgb(69, 69, 69), 0 0 10px #fff, 0 0 42px rgb(128, 37, 9),
+    0 0 77px rgb(128, 37, 9), 0 0 100px rgb(128, 37, 9);
+}
+
+@keyframes lumiere {
+  0% {
+    text-shadow: 0 0 7px rgb(69, 69, 69), 0 0 10px #fff,
+      0 0 42px rgb(128, 37, 9), 0 0 77px rgb(128, 37, 9),
+      0 0 100px rgb(128, 37, 9);
+  }
+  50% {
+    opacity: 0.5;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 32px rgb(230, 67, 18),
+      0 0 87px rgb(230, 67, 18), 0 0 120px rgb(230, 67, 18);
+  }
+}
+
+/*---------CARD DROPED---------*/
+
+.cardDroped {
+  position: absolute;
+  width: auto;
+  height: 35vh;
+  top: 36vh;
+  left: 48vw;
+  z-index: 3;
+}
+#cardDropedName {
+  position: absolute;
+  font-size: 2.75vh;
+  top: 0.9vh;
+  left: 50;
+  z-index: 2;
+}
+
+.cardDropedStatsTable {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  font-size: 2.8vh;
+  gap: 2vw;
+}
+
+.cardDropedStatsTable p {
+  margin: 0;
+}
+
+.cardDropedLeftCol,
+.cardDropedRightCol {
+  margin-bottom: 4vh;
+}
+
+.cardSelectDroped {
+  position: absolute;
+  width: auto;
+  height: 35vh;
+  top: 36vh;
+  left: 48vw;
+  z-index: 3;
+}
+.cardSelectDropedComputer {
+  position: absolute;
+  width: auto;
+  height: 35vh;
+  top: 36vh;
+  left: 63vw;
+  z-index: 3;
+}
+
+#cardPictsDroped {
+  display: flex;
+  justify-content: center;
+}
+#cardPictsDroped img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5.8%;
+}
+
+#cardModelDroped {
+  display: flex;
+  height: 100%;
+  cursor: url("../src/assets/img/cursorMove.png"), auto;
+}
+
+#habillageDroped {
+  position: absolute;
+}
+/*---------LIFECOUNTER---------*/
+
+#lifecounter {
+  position: absolute;
+  top: 35vh;
+  left: 41vw;
+  width: 17vw;
+  height: 35vh;
+  transform: translate(42.8vw, -25vh);
+  z-index: 1;
+}
+
+#lifecounter img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 0vh;
+  left: 0vw;
+}
+#computerLife {
+  color: rgb(230, 67, 18);
+}
+#firstPlayerLife {
+  color: green;
+}
+
+#lifecounterGlass {
+  position: absolute;
+  scale: 0.55;
+  transform: translate(-4.6vw, -2.5vh);
+}
+
+#FightThemeIcon {
+  position: absolute;
+  scale: 0.55;
+  transform: translate(-0.4vw, -2.8vh);
+}
+
+#score {
+  height: 40vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translate(3.4vw, -2.8vh);
+}
+
+#score p {
+  font-size: 5vh;
+  text-shadow: 0.5vh 0.5vh 2vh black;
+}
+
+/*---------FIGHT BUTTON---------*/
+
+#fightButt {
+  position: absolute;
+  top: 67.5vh;
+  left: 51.55%;
+  z-index: 5;
+  width: 6vw;
+  height: auto;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+.rules {
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  width: 10vw;
+}
+
+/* -----CARD SELECTED----- */
+
+.cardSelected {
+  position: absolute;
+  width: auto;
+  height: 51vh;
+  top: 19vh;
+  left: 6vw;
+}
+
+/* -----FAVORITE CARDS----- */
+
+.cardFavorite01 {
+  position: absolute;
+  width: auto;
+  height: 24vh;
+  top: 74vh;
+  left: 6.1vw;
+  z-index: 1;
+}
+.cardFavorite01:hover {
+  z-index: 8;
+}
+
+.cardFavorite02 {
+  position: absolute;
+  width: auto;
+  height: 24vh;
+  top: 74vh;
+  left: 16vw;
+  z-index: 1;
+}
+
+.cardFavorite02:hover {
+  z-index: 10;
+}
+
+#favoriteName {
+  position: absolute;
+  font-size: 2.2vh;
+  top: 0.5vh;
+  z-index: 2;
+}
+
+.favoriteStatsTable {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  font-size: 2vh;
+  gap: 1.5vw;
+}
+
+.favoriteStatsTable p {
+  margin: 0;
+}
+
+.favoriteLeftCol,
+.favoriteRightCol {
+  margin-bottom: 2.7vh;
+}
+
+#cardPictsFavorite {
+  display: flex;
+  justify-content: center;
+}
+
+#cardPictsFavorite img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5.8%;
+}
+
+#cardModelFavorite {
+  display: flex;
+  height: 100%;
+  cursor: url("../src/assets/img/cursorMove.png"), auto;
+}
+
+#habillageFavorite {
+  position: absolute;
+}
+
+/* -----8 CARDS RANDOM----- */
+
+.cardsRandomContener {
+  position: absolute;
+  display: flex;
+  height: 0;
+  width: 0;
+  top: 74.6vh;
+  left: 26.5vw;
+  z-index: 9;
+}
+
+#cardsRandom img {
+  width: auto;
+  height: 100%;
+}
+
+.cardRandom {
+  position: relative;
+  width: 8.6vw;
+  height: auto;
+  cursor: url("../src/assets/img/cursorMove.png"), auto;
+}
+
+#zoomCardRandom:hover {
+  z-index: 5;
+}
+
+#nameRandom {
+  position: absolute;
+  font-size: 2.2vh;
+  top: 0.4vh;
+  z-index: 2;
+}
+
+.statsTableRandom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.5vw;
+  z-index: 1;
+}
+
+.statsTableRandom p {
+  margin: 0;
+  font-size: 2vh;
+}
+
+.leftColRandom,
+.rightColRandom {
+  margin-bottom: 14%;
+}
+
+#cardPictsRandom {
+  display: flex;
+  justify-content: center;
+}
+#cardPictsRandom img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5.8%;
+}
+
+#habillageRandom {
+  position: absolute;
+}
+
+/* -----CARD MODEL SELECTED----- */
+
+.cardSelected {
+  position: absolute;
+  width: auto;
+  height: 51vh;
+  top: 19vh;
+  left: 6vw;
+}
+
+#cardModelSelected {
+  display: flex;
+  height: 100%;
+  cursor: url("../src/assets/img/cursorMove.png"), auto;
+}
+
+#cardPictsSelected {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#cardPictsSelected img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5.8%;
+}
+
+#nameSelected {
+  font-size: 4vh;
+  position: absolute;
+  top: 1.4vh;
+  z-index: 1;
+}
+
+#habillageSelected {
+  position: absolute;
+}
+
+.statsTableSelected {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  font-size: 4vh;
+  gap: 3vw;
+  z-index: 1;
+}
+
+.statsTableSelected p {
+  margin: 0;
+}
+
+.leftColSelected,
+.rightColSelected {
+  margin-bottom: 6vh;
+}
+
+/* -----SELECT HERO PAGE----- */
+
+.btn-ready {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 37vh;
+  left: 26vw;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+#SelectHeroesBG {
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/img/HomeAndSelectBG.png");
+  background-size: 100vw;
+  background-position: 0vh, -10vw;
+}
+
+#SelectHeroesReadyBt {
+  position: absolute;
+  z-index: 4;
+  width: 8vw;
+  height: auto;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+.zoomSelectHeroesReadyBt {
+  transition: transform 0.2s;
+}
+
+.zoomSelectHeroesReadyBt:hover {
+  transform: scale(1.2);
+}
+
+.FavoritsCards {
+  width: 500px;
+  height: 500px;
+}
+.EachFavorite {
+  width: 500px;
+  height: 500px;
+}
+
+#favoriteButton01 {
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  top: 57vh;
+  left: 0.6vw;
+  z-index: 0;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+#favoriteButton02 {
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  top: 57vh;
+  left: 10.6vw;
+  z-index: 0;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+.eachHero {
+  cursor: url("../src/assets/img/cursorMove.png"), auto;
+}
+
+.eachHero:hover {
+  z-index: 5;
+}
+
+#fightAnimation {
+  position: absolute;
+  width: auto;
+  height: 30vh;
+  top: 38vh;
+  left: 55vw;
+  z-index: 15;
+}
+
+/* -----RULES----- */
+.rules {
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  width: 10vw;
+}
+
+.btn-rules {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  scale: 0.7;
+  top: 5vh;
+  left: 5vw;
+  cursor: url("../src/assets/img/cursorSelect.png"), auto;
+}
+
+.ruletext {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.rulesText {
+  display: flex;
+  background-color: rgba(234, 180, 110, 0.502);
+  text-shadow: 0.5vh 0.5vh 2vh black;
+  align-items: center;
+  width: 50vw;
+  padding: 10vh;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  line-height: 1.7em;
+  font-size: 1.8rem;
+  border-radius: 150px;
+  flex-wrap: wrap;
+}
+
+.rulesVideos {
+  padding: 5px;
+  border-radius: 30px;
+  width: 500px;
+}

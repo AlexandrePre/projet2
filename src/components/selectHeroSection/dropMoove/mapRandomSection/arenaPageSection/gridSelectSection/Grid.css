@@ -1,0 +1,15 @@
+.grid {
+  position: absolute;
+  top: 6vh;
+  left: 37vw;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: auto;
+  gap: 0.5vh;
+  z-index: 8;
+}
+.eachHero {
+  width: 11.5%;
+  height: auto;
+}
