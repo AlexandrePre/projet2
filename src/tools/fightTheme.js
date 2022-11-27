@@ -1,3 +1,11 @@
+import PWR from "../assets/img/iconeFTPower.png";
+import AGI from "../assets/img/iconeFTAgility.png";
+import FGT from "../assets/img/iconeFTFight.png";
+import INT from "../assets/img/iconeFTIntelligency.png";
+import STA from "../assets/img/iconeFTStamina.png";
+import STR from "../assets/img/iconeFTStrenght.png";
+import LUCK from "../assets/img/iconeFTRandom.png";
+
 const allThemes = [
   "power",
   "speed",
@@ -10,27 +18,27 @@ const allThemes = [
 const randomTheme = allThemes[Math.floor(Math.random() * allThemes.length)];
 
 const fightTheme = [
-  { txt: "PWR", img: "../src/assets/img/iconeFTPower.png", theme: "power" },
-  { txt: "AGI", img: "../src/assets/img/iconeFTAgility.png", theme: "speed" },
-  { txt: "FGT", img: "../src/assets/img/iconeFTFight.png", theme: "combat" },
+  { txt: "PWR", img: PWR, theme: "power" },
+  { txt: "AGI", img: AGI, theme: "speed" },
+  { txt: "FGT", img: FGT, theme: "combat" },
   {
     txt: "INT",
-    img: "../src/assets/img/iconeFTIntelligency.png",
+    img: INT,
     theme: "intelligence",
   },
   {
     txt: "STA",
-    img: "../src/assets/img/iconeFTStamina.png",
+    img: STA,
     theme: "durability",
   },
   {
     txt: "STR",
-    img: "../src/assets/img/iconeFTStrenght.png",
+    img: STR,
     theme: "strength",
   },
   {
     txt: "LUCK",
-    img: "../src/assets/img/iconeFTRandom.png",
+    img: LUCK,
     theme: `${randomTheme}`,
   },
 ];

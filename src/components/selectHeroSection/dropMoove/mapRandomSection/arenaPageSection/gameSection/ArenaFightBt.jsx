@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { GetHeroesById } from "../../../../../../tools/GetHeroes";
 import sound5 from "../../../../../../assets/sounds/fightSound.mp3";
+import buttonFight from "../../../../../../assets/img/fightButton.png";
 
 function play5() {
   new Audio(sound5).play();
@@ -77,7 +78,7 @@ const ArenaFightBt = ({
           displayNoneCardFavorite2();
         }}
         className="zoomfightButt"
-        src="./src/assets/img/fightButton.png"
+        src={buttonFight}
         alt="Fight Button"
         onKeyDown=""
         role="presentation"
