@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import CardDroped from "./arenaDropSection/CardDroped";
+import CardDropedImg from "../../../../../../assets/img/CardBackBlk.png";
 
 const ArenaDrop = ({
   themeFight,
@@ -18,7 +19,7 @@ const ArenaDrop = ({
       />
       <div id="arenaDrop">
         <div id="arenaDropBG">
-          <img src="./src/assets/img/CardBackBlk.png" alt="" />
+          <img src={CardDropedImg} alt="" />
         </div>
         <p>
           FIGHT <br /> WITH <br /> {themeFight.txt}

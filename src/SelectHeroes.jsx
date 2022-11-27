@@ -12,7 +12,6 @@ const SelectHeroes = () => {
 
   return (
     <div className="SelectHeroes">
-      <ButtonRulesgenerique />
       <MapRandom
         drop={drop}
         setDrop={setDrop}

@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ButtonRulesgenerique.css";
 import { motion } from "framer-motion";
 import ButtonRules from "../assets/img/RulesButton.png";
 
 const ButtonRulesgenerique = () => {
   return (
-    <a href="../TutoRules" target="_blank">
+    <Link to="./TutoRules" target="_blank">
       <motion.button
         transition={{
           duration: 0,
@@ -31,7 +32,7 @@ const ButtonRulesgenerique = () => {
           role="presentation"
         />
       </motion.button>
-    </a>
+    </Link>
   );
 };
 
