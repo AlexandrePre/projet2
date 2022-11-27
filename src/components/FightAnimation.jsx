@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
+import Fight from "../assets/img/fight01.gif";
 
 const FightAnimation = ({ isShownCardComputer }) => {
   const variants = {
@@ -35,7 +36,7 @@ const FightAnimation = ({ isShownCardComputer }) => {
       variants={variants}
       animate={isShownCardComputer ? "open" : "close"}
       id="fightAnimation"
-      src="../../src/assets/img/fight01.gif"
+      src={Fight}
       alt="Fight Animation"
       style={{ display: isShownCardComputer ? "block" : "none" }}
     />

@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import "./endGame.css";
 import gif1 from "../../../../../../assets/img/loose.gif";
 import sound8 from "../../../../../../assets/sounds/looseMusic.mp3";
+import Buttonreturn from "../../../../../../assets/img/ReplayButton.png";
+import ButtonLeave from "../../../../../../assets/img/LeaveButton.png";
 
 function play8() {
   new Audio(sound8).play();
@@ -58,7 +60,7 @@ const Loose = () => {
             initial={{ rotate: -20, scale: 0.1, opacity: 1 }}
             animate={{ rotate: 0, scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 1 }}
-            src="./src/assets/img/ReplayButton.png"
+            src={Buttonreturn}
             alt="favoriteButton"
             onKeyDown=""
             role="presentation"
@@ -78,7 +80,7 @@ const Loose = () => {
             }}
             initial={{ rotate: 20, scale: 0.1, opacity: 1 }}
             animate={{ rotate: 0, scale: 1, opacity: 1 }}
-            src="./src/assets/img/LeaveButton.png"
+            src={ButtonLeave}
             alt="favoriteButton"
             onKeyDown=""
             role="presentation"

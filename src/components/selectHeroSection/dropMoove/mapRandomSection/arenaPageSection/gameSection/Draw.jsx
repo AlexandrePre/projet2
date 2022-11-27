@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./endGame.css";
 import gif3 from "../../../../../../assets/img/drawMatch.gif";
+import Buttonreturn from "../../../../../../assets/img/ReplayButton.png";
+import ButtonLeave from "../../../../../../assets/img/LeaveButton.png";
 
 const Draw = () => {
   document.body.style.overflow = "hidden";
@@ -49,7 +51,7 @@ const Draw = () => {
             initial={{ rotate: -20, scale: 0.1, opacity: 1 }}
             animate={{ rotate: 0, scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 1 }}
-            src="./src/assets/img/ReplayButton.png"
+            src={Buttonreturn}
             alt="favoriteButton"
             onKeyDown=""
             role="presentation"
@@ -69,7 +71,7 @@ const Draw = () => {
             }}
             initial={{ rotate: 20, scale: 0.1, opacity: 1 }}
             animate={{ rotate: 0, scale: 1, opacity: 1 }}
-            src="./src/assets/img/LeaveButton.png"
+            src={ButtonLeave}
             alt="favoriteButton"
             onKeyDown=""
             role="presentation"

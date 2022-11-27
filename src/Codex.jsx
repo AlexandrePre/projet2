@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Search from "./components/codex/Search";
 import Heroes from "./components/codex/Heroes";
 import "./Codex.css";
+import ButtonLeave from "./assets/img/LeaveButton.png";
 
 const Codex = ({ heroes }) => {
   const [search, setSearch] = useState("");
@@ -28,7 +29,7 @@ const Codex = ({ heroes }) => {
           initial={{ rotate: 20, scale: 0.1, opacity: 1 }}
           animate={{ rotate: 0, scale: 1, opacity: 1 }}
           exit={{ scale: 0, opacity: 1 }}
-          src="./src/assets/img/LeaveButton.png"
+          src={ButtonLeave}
           alt="favoriteButton"
           onKeyDown=""
           role="presentation"

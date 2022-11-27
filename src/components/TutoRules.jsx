@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import DataRules from "../tools/DataRules";
+import ButtonLeave from "../assets/img/LeaveButton.png";
 
 const TutoRules = () => {
   return (
@@ -20,7 +21,7 @@ const TutoRules = () => {
             initial={{ rotate: 20, scale: 0.1, opacity: 1 }}
             animate={{ rotate: 0, scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 1 }}
-            src="./src/assets/img/LeaveButton.png"
+            src={ButtonLeave}
             alt="favoriteButton"
             onKeyDown=""
             role="presentation"
