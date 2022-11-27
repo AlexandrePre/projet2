@@ -18,3 +18,13 @@ code {
 button {
   font-size: calc(10px + 2vmin);
 }
+
+#Bgphone {
+  display: none;
+}
+
+@media screen and (max-width: 424px) {
+  #Bgphone {
+    display: block;
+  }
+}

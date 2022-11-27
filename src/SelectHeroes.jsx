@@ -2,7 +2,6 @@ import { useState } from "react";
 import SelectHeroesBG from "./components/selectHeroSection/SelectHeroesBG";
 import "./SelectHeroes.css";
 import MapRandom from "./components/selectHeroSection/dropMoove/MapRandom";
-import ButtonRulesgenerique from "./components/ButtonRulesgenerique";
 
 const SelectHeroes = () => {
   const [drop, setDrop] = useState("");

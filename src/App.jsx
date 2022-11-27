@@ -12,6 +12,7 @@ import Draw from "./components/selectHeroSection/dropMoove/mapRandomSection/aren
 import HeroDetails from "./components/codex/HeroDetails";
 import Rules from "./Rules";
 import "./App.css";
+import Bgphone from "./Bgphone";
 
 const App = () => {
   const [heroes, setHeroes] = useState([]);
@@ -26,6 +27,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Bgphone />
       <Routes>
         <Route path="/" element={<Home heroes={heroes} />} />
         <Route path="/Codex" element={<Codex heroes={heroes} />} />
